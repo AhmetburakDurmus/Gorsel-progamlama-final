@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FVDataModelStoreContainer" CdmEntityContainer="FVDataEntities">
+    <EntitySetMapping Name="Ders">
+      <EntityTypeMapping TypeName="FVDataModel.Ders">
+        <MappingFragment StoreEntitySet="Ders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+          <ScalarProperty Name="Kredi" ColumnName="Kredi" />
+          <ScalarProperty Name="OkulYonetimId" ColumnName="OkulYonetimId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenci">
+      <EntityTypeMapping TypeName="FVDataModel.Ogrenci">
+        <MappingFragment StoreEntitySet="Ogrenci">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OgrenciAdSoyad" ColumnName="OgrenciAdSoyad" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="OgrenciNo" ColumnName="OgrenciNo" />
+          <ScalarProperty Name="DTarih" ColumnName="DTarih" />
+          <ScalarProperty Name="Bolum" ColumnName="Bolum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OgrenciDers">
+      <EntityTypeMapping TypeName="FVDataModel.OgrenciDers">
+        <MappingFragment StoreEntitySet="OgrenciDers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yonetim">
+      <EntityTypeMapping TypeName="FVDataModel.Yonetim">
+        <MappingFragment StoreEntitySet="Yonetim">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="YonetimAdSoyad" ColumnName="YonetimAdSoyad" />
+          <ScalarProperty Name="Gorevi" ColumnName="Gorevi" />
+          <ScalarProperty Name="YonetimTip" ColumnName="YonetimTip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
